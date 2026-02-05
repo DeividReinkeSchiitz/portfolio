@@ -4,7 +4,7 @@
 
 :root {
   --text-white: #fafafa;
-  --blue: #00C7FF;
+  --blue: #00c7ff;
   --blue-RGB: 0, 199, 255;
   --background: #ffffff;
   --foreground: #171717;
@@ -18,27 +18,25 @@
 }
 
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 
-  box-sizing:border-box
+  box-sizing: border-box;
 }
 
-html, body{
-  height:100%;
-  width:100%;
-  overflow-x:hidden;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /*html body p {*/
 /*  pointer-events: auto;*/
 /*}*/
 
-
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-raleway), Arial, Helvetica, serif;
 }
-
-
