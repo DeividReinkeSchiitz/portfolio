@@ -20,7 +20,7 @@ export default function CategoryFilter({
   return (
     <div className="flex justify-center mb-12">
       <LayoutGroup>
-        <div className="flex flex-wrap gap-3 p-2 rounded-2xl bg-[#111111] border border-gray-800">
+        <div className="flex flex-wrap gap-3 p-2 rounded-2xl bg-[var(--secondary-bg)] border border-gray-800">
           {allCategories.map((category) => {
             const isActive = activeCategory === category;
             const colors =
@@ -47,7 +47,7 @@ export default function CategoryFilter({
                     style={{
                       background:
                         category === "all"
-                          ? "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)"
+                          ? "linear-gradient(135deg, var(--category-indigo) 0%, var(--category-violet) 100%)"
                           : `linear-gradient(135deg, ${colors?.solid} 0%, rgba(${colors?.rgb}, 0.8) 100%)`,
                       boxShadow: `0 4px 15px rgba(${colors?.rgb || "99, 102, 241"}, 0.3)`,
                     }}

@@ -39,7 +39,7 @@ export default function ProjectShowcase({ projects }: ProjectShowcaseProps) {
   );
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pb-16">
       {/* Grid of project cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (

@@ -23,7 +23,7 @@ export default function TimelineDot({
       className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 z-10 
                 w-10 h-10 rounded-full ${colors.tailwind} 
                 flex items-center justify-center shadow-lg
-                border-4 border-[#0a0a0a]`}
+                border-4 border-[var(--primary-bg)]`}
       style={{ boxShadow: `0 10px 15px -3px rgba(${colors.rgb}, 0.2)` }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >

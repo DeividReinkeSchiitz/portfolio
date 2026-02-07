@@ -8,6 +8,7 @@
   --blue-RGB: 0, 199, 255;
   --background: #ffffff;
   --foreground: #171717;
+
   /* Technology Colors - Auto-generated from colors.js */
   --color-react: #58c4dc;
   --color-react-native: #58c4dc;
@@ -36,6 +37,57 @@
   --color-styled-components: #f456ff;
   --color-oracle-cloud: #f22327;
   /* End Technology Colors */
+
+  /* UI Theme Colors */
+  --primary-bg: #0a0a0a;
+  --secondary-bg: #111111;
+  --tertiary-bg: #1a1a1a;
+  --card-bg: #0b0b0e;
+  --surface-bg: #0a0a0c;
+  --hover-surface: #0a0b0b;
+  --browser-chrome: #1a1a1e;
+  --browser-viewport: #0e0e10;
+  --dark-chrome: #18181b;
+  --overlay-dark: #0e0e0e;
+  --modal-gradient-start: #0a0a0a;
+  --modal-gradient-end: #1a1a1a;
+  --detail-overlay: #050507;
+
+  /* Traffic Light Colors */
+  --traffic-red: #ff5f57;
+  --traffic-yellow: #febc2e;
+  --traffic-green: #28c840;
+
+  /* Category Colors */
+  --category-green: #10b981;
+  --category-green-RGB: 16, 185, 129;
+  --category-blue: #3b82f6;
+  --category-blue-RGB: 59, 130, 246;
+  --category-amber: #f59e0b;
+  --category-amber-RGB: 245, 158, 11;
+  --category-violet: #8b5cf6;
+  --category-violet-RGB: 139, 92, 246;
+  --category-indigo: #6366f1;
+  --category-indigo-RGB: 99, 102, 241;
+  --category-purple: #a855f7;
+  --category-purple-RGB: 168, 85, 247;
+  --category-lime: #22c55e;
+  --category-lime-RGB: 34, 197, 94;
+  --category-yellow: #eab308;
+  --category-yellow-RGB: 234, 179, 8;
+
+  /* Project Accent Colors */
+  --accent-cyan: #00c7ff;
+  --accent-purple: #7f6fed;
+  --accent-gold: #ffca28;
+  --accent-red: #d50000;
+  --accent-blue-light: #5c7cfa;
+  --accent-dark: #212121;
+  --accent-gray: #686868;
+  --accent-black: #000000;
+
+  /* Text Colors */
+  --text-primary: #fafafa;
 }
 
 @media (prefers-color-scheme: dark) {

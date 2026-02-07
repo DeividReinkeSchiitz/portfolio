@@ -1,15 +1,18 @@
-import SocialMedias from "@/app/components/SocialMedias";
 import RadiusBlur from "@/app/Contact/RadiusBlur";
-import ContactHeader from "./components/ContactHeader";
+import AnimatedContactHeader from "./components/AnimatedContactHeader";
+import AnimatedSocialMedias from "./components/AnimatedSocialMedias";
 import { contactInfo } from "./constants";
+import getStaticData from "@/../public/static";
 
-export default function Contact() {
+export default async function Contact() {
+  const static_data = await getStaticData();
+
   return (
     <div className="relative h-full w-full items-center overflow-hidden">
-      <div className="flex flex-col h-full w-full items-center justify-evenly">
+      <div className="flex flex-col h-full w-full items-center justify-evenly py-12 gap-12">
         <RadiusBlur />
 
-        <ContactHeader
+        <AnimatedContactHeader
           locationText={contactInfo.locationText}
           title={contactInfo.title}
           description={contactInfo.description}
@@ -17,7 +20,7 @@ export default function Contact() {
           globeIcon={contactInfo.icons.globe}
         />
 
-        <SocialMedias />
+        <AnimatedSocialMedias socialMedias={static_data.social_medias} />
       </div>
     </div>
   );

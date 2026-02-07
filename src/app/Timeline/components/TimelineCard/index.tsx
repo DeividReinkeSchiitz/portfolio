@@ -66,7 +66,7 @@ export default function TimelineCard({
         <motion.div
           layout
           layoutId={hasDetails ? `card-container-${event.id}` : undefined}
-          className={`relative p-6 rounded-2xl bg-[#111111] border ${colors.border} 
+          className={`relative p-6 rounded-2xl bg-[var(--secondary-bg)] border ${colors.border} 
                     border-opacity-30 hover:border-opacity-100 transition-colors duration-300
                     ${hasDetails ? "cursor-pointer" : ""}
                     group`}

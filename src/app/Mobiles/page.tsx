@@ -4,7 +4,7 @@ import { mobilesPageConfig, mobileProjects } from "./constants";
 
 export default function Mobiles() {
   return (
-    <div className="min-h-screen text-white relative pb-20">
+    <div className="min-h-screen text-white relative">
       <PageHeader
         title={mobilesPageConfig.title}
         description={mobilesPageConfig.description}

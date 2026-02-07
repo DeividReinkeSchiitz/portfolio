@@ -4,40 +4,40 @@ export function getCategoryColors(category: ProjectCategory): CategoryColors {
   switch (category) {
     case "backend":
       return {
-        solid: "#10b981", // green
-        rgb: "16, 185, 129",
+        solid: "var(--category-green)",
+        rgb: "var(--category-green-RGB)",
         tailwind: "text-green-500",
         border: "border-green-500",
         bg: "bg-green-500/10",
       };
     case "template":
       return {
-        solid: "#3b82f6", // blue
-        rgb: "59, 130, 246",
+        solid: "var(--category-blue)",
+        rgb: "var(--category-blue-RGB)",
         tailwind: "text-blue-500",
         border: "border-blue-500",
         bg: "bg-blue-500/10",
       };
     case "tool":
       return {
-        solid: "#f59e0b", // amber
-        rgb: "245, 158, 11",
+        solid: "var(--category-amber)",
+        rgb: "var(--category-amber-RGB)",
         tailwind: "text-amber-500",
         border: "border-amber-500",
         bg: "bg-amber-500/10",
       };
     case "library":
       return {
-        solid: "#8b5cf6", // violet
-        rgb: "139, 92, 246",
+        solid: "var(--category-violet)",
+        rgb: "var(--category-violet-RGB)",
         tailwind: "text-violet-500",
         border: "border-violet-500",
         bg: "bg-violet-500/10",
       };
     default:
       return {
-        solid: "#6366f1", // indigo
-        rgb: "99, 102, 241",
+        solid: "var(--category-indigo)",
+        rgb: "var(--category-indigo-RGB)",
         tailwind: "text-indigo-500",
         border: "border-indigo-500",
         bg: "bg-indigo-500/10",

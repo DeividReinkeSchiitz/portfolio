@@ -5,7 +5,7 @@ import { WebShowcaseProject } from "@/app/components/WebsiteShowcase/types";
 export const websitesPageConfig = {
   title: "Website Projects",
   description:
-    "Every backend needs a amazing interface. Here are a few of my all-time favorites that I'm proud to share!",
+    "Every backend needs a <span>amazing</span> interface. Here are a few of my all-time favorites that I'm proud to share!",
   icons: [
     {
       src: website_svg,

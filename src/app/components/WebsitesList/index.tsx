@@ -33,7 +33,7 @@ const WebsiteImage = ({ content }: WebsiteImageProps) => {
         {/*HOVER GRAY BACK*/}
         <div
           className={
-            "absolute bg-[#0e0e0e] top-0 left-0 w-full h-full z-10 rounded-3xl " +
+            "absolute bg-[var(--overlay-dark)] top-0 left-0 w-full h-full z-10 rounded-3xl " +
             "bg-opacity-25 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out"
           }
         >

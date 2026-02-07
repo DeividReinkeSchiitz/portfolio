@@ -1,5 +1,5 @@
 import { TypeColors } from "./types";
-const { TECH_COLORS } = require("@/app/config/colors");
+const { colors } = require("@/app/colors");
 
 export const getTypeColors = (
   type: "work" | "education" | "project" | "achievement",
@@ -14,22 +14,22 @@ export const getTypeColors = (
       };
     case "education":
       return {
-        solid: "#a855f7",
-        rgb: "168, 85, 247",
+        solid: "var(--category-purple)",
+        rgb: "var(--category-purple-RGB)",
         tailwind: "bg-purple-500",
         border: "border-purple-500",
       };
     case "project":
       return {
-        solid: "#22c55e",
-        rgb: "34, 197, 94",
+        solid: "var(--category-lime)",
+        rgb: "var(--category-lime-RGB)",
         tailwind: "bg-green-500",
         border: "border-green-500",
       };
     case "achievement":
       return {
-        solid: "#eab308",
-        rgb: "234, 179, 8",
+        solid: "var(--category-yellow)",
+        rgb: "var(--category-yellow-RGB)",
         tailwind: "bg-yellow-500",
         border: "border-yellow-500",
       };
@@ -48,11 +48,11 @@ export const hexToRgb = (hex: string): string => {
 
 export const getTechColor = (techName: string): string => {
   const varName = `--color-${techName.toLowerCase().replace(/\s+/g, "-").replace(/\./g, "-")}`;
-  return `var(${varName}, ${TECH_COLORS[techName as keyof typeof TECH_COLORS] || "#fafafa"})`;
+  return `var(${varName}, ${colors[techName as keyof typeof colors] || "var(--text-primary)"})`;
 };
 
 export const getTechColorValue = (techName: string): string => {
-  return TECH_COLORS[techName as keyof typeof TECH_COLORS] || "#fafafa";
+  return colors[techName as keyof typeof colors] || "var(--text-primary)";
 };
 
 export const getTimelineIcon = (

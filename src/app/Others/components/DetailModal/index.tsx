@@ -74,7 +74,8 @@ export default function ProjectDetailModal({
           <motion.div
             className="relative w-full max-w-5xl max-h-[95vh] overflow-hidden rounded-3xl shadow-2xl"
             style={{
-              background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)",
+              background:
+                "linear-gradient(135deg, var(--modal-gradient-start) 0%, var(--modal-gradient-end) 100%)",
             }}
             initial={{ scale: 0.92, y: 20 }}
             animate={{ scale: 1, y: 0 }}

@@ -19,12 +19,12 @@ export default function BrowserMockup({
   return (
     <div className="relative w-full">
       {/* Browser chrome */}
-      <div className="rounded-t-xl bg-[#1a1a1e] border border-white/[0.06] border-b-0 px-4 py-2.5 flex items-center gap-3">
+      <div className="rounded-t-xl bg-[var(--browser-chrome)] border border-white/[0.06] border-b-0 px-4 py-2.5 flex items-center gap-3">
         {/* Traffic lights */}
         <div className="flex gap-1.5">
-          <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
-          <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
-          <div className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
+          <div className="w-2.5 h-2.5 rounded-full bg-[var(--traffic-red)]" />
+          <div className="w-2.5 h-2.5 rounded-full bg-[var(--traffic-yellow)]" />
+          <div className="w-2.5 h-2.5 rounded-full bg-[var(--traffic-green)]" />
         </div>
 
         {/* URL bar */}
@@ -42,7 +42,7 @@ export default function BrowserMockup({
 
       {/* Browser viewport */}
       <motion.div
-        className="relative rounded-b-xl overflow-hidden border border-white/[0.06] border-t-0 bg-[#0e0e10]"
+        className="relative rounded-b-xl overflow-hidden border border-white/[0.06] border-t-0 bg-[var(--browser-viewport)]"
         style={{ aspectRatio: "16/10" }}
       >
         <Image src={src} alt={alt} fill className="object-cover" quality={95} />

@@ -42,7 +42,7 @@ export default function WebsiteShowcase({ projects }: WebsiteShowcaseProps) {
   );
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pb-20">
+    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pb-16">
       {/* Stacked horizontal cards */}
       <div className="flex flex-col gap-6">
         {projects.map((project, index) => (

@@ -30,7 +30,7 @@ export default function TechnologyTags({
             key={tech}
             layoutId={hasDetails ? `tech-${eventId}-${tech}` : undefined}
             className="px-3 py-1 text-xs rounded-full bg-white bg-opacity-5
-                      border border-white border-opacity-10 text-[#fafafa]
+                      border border-white border-opacity-10 text-[var(--text-primary)]
                       transition-colors duration-300 cursor-default"
             style={{
               borderColor: isCardHovered ? techColorVar : undefined,

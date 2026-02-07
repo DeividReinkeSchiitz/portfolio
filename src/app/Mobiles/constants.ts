@@ -2,6 +2,7 @@ import phone_svg from "@/../public/phone.svg";
 import battery_svg from "@/../public/battery.svg";
 import { IconConfig } from "@/app/components/PageHeader/types";
 import { ShowcaseProject } from "@/app/components/ProjectShowcase/types";
+import { colors } from "@/app/colors";
 
 export const mobilesPageConfig = {
   title: "Mobile Projects",
@@ -38,7 +39,7 @@ export const mobileProjects: ShowcaseProject[] = [
     icon: "qacademic_icon.svg",
     images: ["/qacademic1.svg", "/qacademic2.svg", "/qacademic3.svg"],
     github: "https://github.com/DeividReinkeSchiitz/Qacademic",
-    color: "#58C4DC",
+    color: colors["Node.js"],
     role: "Full-Stack Developer",
     highlights: [
       "Built a custom web scraping server in Node.js to extract grades and class material from the institution portal",
@@ -95,7 +96,7 @@ export const mobileProjects: ShowcaseProject[] = [
     icon: "pill_icon.svg",
     images: ["/pill1.svg", "/pill2.svg", "/pill3.svg"],
     github: "https://github.com/DeividReinkeSchiitz/PillDispenser",
-    color: "#FF8F00",
+    color: colors["React Native"],
     role: "Full-Stack & IoT Developer",
     highlights: [
       "Integrated with ESP32 / Arduino hardware dispensers via Firebase real-time database",
@@ -163,7 +164,7 @@ export const mobileProjects: ShowcaseProject[] = [
     icon: "covid.svg",
     images: ["/covid1.svg", "/covid2.svg", "/covid3.svg"],
     github: "https://github.com/DeividReinkeSchiitz/covid-19",
-    color: "#E53935",
+    color: colors.Firebase,
     role: "Mobile Developer",
     highlights: [
       "Consumed a public REST API with real-time worldwide pandemic data",

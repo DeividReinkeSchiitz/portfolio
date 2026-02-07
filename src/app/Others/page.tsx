@@ -31,14 +31,14 @@ export default function Others() {
   }, [activeCategory]);
 
   return (
-    <div className="min-h-screen text-white relative pb-20">
+    <div className="min-h-screen text-white relative">
       <PageHeader
         title={othersPageConfig.title}
         description={othersPageConfig.description}
         icons={othersPageConfig.icons}
       />
 
-      <div className="mt-16">
+      <div className="mt-16 pb-16">
         <CategoryFilter
           categories={categories}
           activeCategory={activeCategory}

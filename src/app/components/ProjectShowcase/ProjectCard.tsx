@@ -47,15 +47,14 @@ export default function ProjectCard({
 
       {/* Image section */}
       <div className="relative h-48 overflow-hidden">
-        <motion.div
-          layoutId={`card-image-${project.id}`}
-          className="h-full w-full"
-        >
+        <div className="h-full w-full">
           {project.images[0] ? (
             <Image
               src={project.images[0]}
               alt={project.name}
               fill
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />
           ) : (
@@ -66,10 +65,10 @@ export default function ProjectCard({
               }}
             />
           )}
-        </motion.div>
+        </div>
 
         {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--primary-bg)] via-transparent to-transparent" />
 
         {/* Icon badge */}
         <motion.div

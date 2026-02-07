@@ -39,7 +39,7 @@ export default function ProjectCard({
 
   return (
     <div
-      className={`group relative flex flex-col h-full p-6 rounded-2xl bg-[#111111] border ${colors.border}
+      className={`group relative flex flex-col h-full p-6 rounded-2xl bg-[var(--secondary-bg)] border ${colors.border}
                 border-opacity-30 hover:border-opacity-100 transition-all duration-300 ease-out
                 hover:shadow-lg hover:-translate-y-1
                 ${hasDetails ? "cursor-pointer" : ""}`}

@@ -90,7 +90,7 @@ export default function ProjectDetail({
     >
       {/* Backdrop */}
       <motion.div
-        className="absolute inset-0 bg-[#050507]/95 backdrop-blur-2xl"
+        className="absolute inset-0 bg-[var(--detail-overlay)]/95 backdrop-blur-2xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -108,7 +108,7 @@ export default function ProjectDetail({
       {/* Fixed header bar */}
       <motion.div
         style={{ opacity: headerOpacity }}
-        className="fixed top-0 left-0 right-0 z-[110] bg-[#0a0a0c]/80 backdrop-blur-xl border-b border-white/[0.05]"
+        className="fixed top-0 left-0 right-0 z-[110] bg-[var(--surface-bg)]/80 backdrop-blur-xl border-b border-white/[0.05] h-12"
       >
         <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -133,13 +133,13 @@ export default function ProjectDetail({
       </motion.div>
 
       {/* Scrollable content */}
-      <div className="relative z-[101] flex-1 overflow-y-auto overflow-x-hidden scrollbar-hide">
+      <div className="relative z-[101] flex-1 overflow-y-auto overflow-x-hidden scrollbar-hide pt-12">
         <motion.div
           variants={contentVariants}
           initial="hidden"
           animate="visible"
           exit="exit"
-          className="max-w-5xl mx-auto px-4 sm:px-6 pt-8 pb-32"
+          className="max-w-5xl mx-auto px-4 sm:px-6 pt-4 pb-32"
         >
           {/* Close & Navigation bar */}
           <motion.div
@@ -362,7 +362,7 @@ export default function ProjectDetail({
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 40, opacity: 0 }}
         transition={{ delay: 0.3, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        className="fixed bottom-0 left-0 right-0 z-[110] bg-[#0a0a0c]/80 backdrop-blur-xl border-t border-white/[0.05]"
+        className="fixed bottom-0 left-0 right-0 z-[110] bg-[var(--surface-bg)]/80 backdrop-blur-xl border-t border-white/[0.05]"
       >
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <button

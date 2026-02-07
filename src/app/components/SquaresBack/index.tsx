@@ -41,7 +41,7 @@ function SquaresBack() {
         id={`black-square-${i}`}
         className={`square border-b border-r bg-background border-gray-800 border-opacity-50  ${
           hoveredSquareIndex === i
-            ? "border-t border-l hover:transform bg-[#0a0b0b] scale-105 transition-transform duration-300 ease-in-out"
+            ? "border-t border-l hover:transform bg-[var(--hover-surface)] scale-105 transition-transform duration-300 ease-in-out"
             : ""
         }`}
       />,

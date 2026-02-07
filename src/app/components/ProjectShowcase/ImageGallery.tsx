@@ -26,19 +26,20 @@ export default function ImageGallery({
         <AnimatePresence mode="wait">
           <motion.div
             key={activeImage}
-            layoutId={`gallery-image-${projectName}-${activeImage}`}
-            initial={{ opacity: 0, scale: 1.02 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.98 }}
-            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] as const }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
             className="absolute inset-0"
           >
             <Image
               src={images[activeImage]}
               alt={`${projectName} screenshot ${activeImage + 1}`}
               fill
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, 800px"
               className="object-contain"
-              quality={100}
+              quality={85}
             />
           </motion.div>
         </AnimatePresence>
@@ -74,7 +75,10 @@ export default function ImageGallery({
                 src={img}
                 alt={`${projectName} thumbnail ${i + 1}`}
                 fill
+                loading="lazy"
+                sizes="80px"
                 className="object-cover"
+                quality={60}
               />
             </button>
           ))}

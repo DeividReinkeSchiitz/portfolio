@@ -11,7 +11,7 @@ interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
 function Text({ children, typing, className, hover, ...rest }: TextProps) {
   return (
     <p
-      className={`text-[#fafafa] text-base
+      className={`text-[var(--text-primary)] text-base
         ${hover && "hover:cursor-pointer hover:shadow-lg hover:scale-105 font-normal hover:transform transition-transform duration-300 ease-in-out"} 
         ${typing && "typewriter"}
         ${className}`}

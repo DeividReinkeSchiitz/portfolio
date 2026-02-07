@@ -87,7 +87,7 @@ export default function WebsiteDetail({
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="fixed inset-y-0 right-0 z-[101] w-full lg:w-[85vw] xl:w-[80vw] bg-[#0b0b0e] border-l border-white/[0.05] shadow-2xl overflow-hidden"
+        className="fixed inset-y-0 right-0 z-[101] w-full lg:w-[85vw] xl:w-[80vw] bg-[var(--card-bg)] border-l border-white/[0.05] shadow-2xl overflow-hidden"
       >
         {/* Accent gradient */}
         <div

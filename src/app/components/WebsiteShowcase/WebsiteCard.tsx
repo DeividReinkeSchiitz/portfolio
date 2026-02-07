@@ -51,7 +51,7 @@ export default function WebsiteCard({
           className="relative w-full md:w-3/5 shrink-0"
         >
           {/* Browser chrome mini */}
-          <div className="rounded-t-lg bg-[#18181b] border border-white/[0.06] border-b-0 px-3 py-1.5 flex items-center gap-2">
+          <div className="rounded-t-lg bg-[var(--dark-chrome)] border border-white/[0.06] border-b-0 px-3 py-1.5 flex items-center gap-2">
             <div className="flex gap-1">
               <div className="w-2 h-2 rounded-full bg-white/10" />
               <div className="w-2 h-2 rounded-full bg-white/10" />

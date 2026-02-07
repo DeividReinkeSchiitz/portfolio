@@ -1,6 +1,6 @@
 "use server";
 
-const { TECH_COLORS } = require("@/app/config/colors");
+const { colors } = require("@/app/colors");
 
 export interface Root {
   frameworks: Framework[];
@@ -64,42 +64,42 @@ export default async function getStaticData() {
       {
         name: "Postgres",
         icon: "postgres.svg",
-        color: TECH_COLORS.Postgres,
+        color: colors.Postgres,
       },
       {
         name: "Docker",
         icon: "docker.svg",
-        color: TECH_COLORS.Docker,
+        color: colors.Docker,
       },
       {
         name: "Node.js",
         icon: "node.svg",
-        color: TECH_COLORS["Node.js"],
+        color: colors["Node.js"],
       },
       {
         name: "React",
         icon: "react.svg",
-        color: TECH_COLORS.React,
+        color: colors.React,
       },
       {
         name: "TypeScript",
         icon: "typescript.svg",
-        color: TECH_COLORS.TypeScript,
+        color: colors.TypeScript,
       },
       {
         name: "Golang",
         icon: "golang.svg",
-        color: TECH_COLORS.Golang,
+        color: colors.Golang,
       },
       {
         name: "C",
         icon: "c.svg",
-        color: TECH_COLORS.C,
+        color: colors.C,
       },
       {
         name: "Git",
         icon: "git.svg",
-        color: TECH_COLORS.Git,
+        color: colors.Git,
       },
     ],
     websites: [
@@ -115,31 +115,31 @@ export default async function getStaticData() {
             name: "Firebase",
             description: "Backend Tool",
             icon: "firebase.svg",
-            color: TECH_COLORS.Firebase,
+            color: colors.Firebase,
           },
           {
             name: "React",
             description: "Javascript Library",
             icon: "react.svg",
-            color: TECH_COLORS.React,
+            color: colors.React,
           },
           {
             name: "Material UI",
             description: "React UI Framework",
             icon: "materialui.svg",
-            color: TECH_COLORS["Material UI"],
+            color: colors["Material UI"],
           },
           {
             name: "Styled-Components",
             description: "CSS in JS",
             icon: "styled.svg",
-            color: TECH_COLORS["Styled-Components"],
+            color: colors["Styled-Components"],
           },
           {
             name: "TypeScript",
             description: "Javascript Superset",
             icon: "typescript.svg",
-            color: TECH_COLORS.TypeScript,
+            color: colors.TypeScript,
           },
         ],
       },
@@ -155,19 +155,19 @@ export default async function getStaticData() {
             name: "React",
             description: "Javascript Library",
             icon: "react.svg",
-            color: TECH_COLORS.React,
+            color: colors.React,
           },
           {
             name: "TypeScript",
             description: "Javascript Superset",
             icon: "typescript.svg",
-            color: TECH_COLORS.TypeScript,
+            color: colors.TypeScript,
           },
           {
             name: "Tailwind CSS",
             description: "Utility-first CSS framework",
             icon: "tailwind.svg",
-            color: TECH_COLORS["Tailwind CSS"],
+            color: colors["Tailwind CSS"],
           },
           {
             name: "Next.js",
@@ -179,7 +179,7 @@ export default async function getStaticData() {
             name: "Oracle Cloud",
             description: "Cloud Service",
             icon: "oracle.svg",
-            color: TECH_COLORS["Oracle Cloud"],
+            color: colors["Oracle Cloud"],
           },
         ],
       },
@@ -195,19 +195,19 @@ export default async function getStaticData() {
             name: "React",
             description: "Javascript Library",
             icon: "react.svg",
-            color: TECH_COLORS.React,
+            color: colors.React,
           },
           {
             name: "Styled-Components",
             description: "CSS in JS",
             icon: "styled.svg",
-            color: TECH_COLORS["Styled-Components"],
+            color: colors["Styled-Components"],
           },
           {
             name: "TypeScript",
             description: "Javascript Superset",
             icon: "typescript.svg",
-            color: TECH_COLORS.TypeScript,
+            color: colors.TypeScript,
           },
         ],
       },
@@ -227,19 +227,19 @@ export default async function getStaticData() {
             name: "React Native",
             description: "Mobile Framework",
             icon: "react.svg",
-            color: TECH_COLORS["React Native"],
+            color: colors["React Native"],
           },
           {
             name: "TypeScript",
             description: "Javascript Superset",
             icon: "typescript.svg",
-            color: TECH_COLORS.TypeScript,
+            color: colors.TypeScript,
           },
           {
             name: "Node.js",
             description: "Javascript Runtime",
             icon: "node.svg",
-            color: TECH_COLORS["Node.js"],
+            color: colors["Node.js"],
           },
           {
             name: "Web Scraping",
@@ -271,25 +271,25 @@ export default async function getStaticData() {
             name: "Firebase",
             description: "Backend Tool",
             icon: "firebase.svg",
-            color: TECH_COLORS.Firebase,
+            color: colors.Firebase,
           },
           {
             name: "TypeScript",
             description: "Javascript Superset",
             icon: "typescript.svg",
-            color: TECH_COLORS.TypeScript,
+            color: colors.TypeScript,
           },
           {
             name: "Node.js",
             description: "Javascript Runtime",
             icon: "node.svg",
-            color: TECH_COLORS["Node.js"],
+            color: colors["Node.js"],
           },
           {
             name: "React Native",
             description: "Mobile Framework",
             icon: "react.svg",
-            color: TECH_COLORS["React Native"],
+            color: colors["React Native"],
           },
           {
             name: "Expo",
@@ -302,7 +302,7 @@ export default async function getStaticData() {
             name: "Styled-Components",
             description: "CSS in JS",
             icon: "styled.svg",
-            color: TECH_COLORS["Styled-Components"],
+            color: colors["Styled-Components"],
           },
           {
             name: "CRUD",
@@ -325,13 +325,13 @@ export default async function getStaticData() {
             name: "React Native",
             description: "Mobile Framework",
             icon: "react.svg",
-            color: TECH_COLORS["React Native"],
+            color: colors["React Native"],
           },
           {
             name: "TypeScript",
             description: "Javascript Superset",
             icon: "typescript.svg",
-            color: TECH_COLORS.TypeScript,
+            color: colors.TypeScript,
           },
           {
             name: "Expo",
@@ -407,7 +407,7 @@ export default async function getStaticData() {
         live: "",
         github:
           "https://github.com/DeividReinkeSchiitz/FirebaseFunctionsTemplate",
-        color: TECH_COLORS.Firebase,
+        color: colors.Firebase,
       },
       {
         name: "Postgres Node.js Template",

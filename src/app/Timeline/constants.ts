@@ -1,7 +1,7 @@
 import { TimelineEvent } from "./types";
 import { IconConfig } from "@/app/components/PageHeader/types";
 import path_svg from "@/../public/path.svg";
-const { TECH_COLORS } = require("@/app/config/colors");
+const { colors } = require("@/app/colors");
 
 export const timelinePageConfig = {
   title: "My <span>Journey</span>",
@@ -17,7 +17,7 @@ export const timelinePageConfig = {
   ],
 };
 
-export const technologyColors: Record<string, string> = TECH_COLORS;
+export const technologyColors: Record<string, string> = colors;
 
 export const timelineData: TimelineEvent[] = [
   {

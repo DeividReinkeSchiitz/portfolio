@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const { TECH_COLORS } = require("./src/app/config/colors");
+const { colors } = require("./src/app/colors");
 
 export default {
   content: [
@@ -12,7 +12,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        color: Object.keys(TECH_COLORS).reduce(
+        color: Object.keys(colors).reduce(
           (acc, key) => {
             const varName = key
               .toLowerCase()

@@ -15,6 +15,7 @@ Your Others page has been completely restructured with amazing animations, bette
 ## 🎯 Key Improvements
 
 ### 1. Animation System
+
 - **Framer Motion** for smooth, performant animations
 - **Shared layout animations** between card → modal transitions
 - **Staggered entrance** for visual hierarchy
@@ -22,6 +23,7 @@ Your Others page has been completely restructured with amazing animations, bette
 - **Particle effects** in modals for visual interest
 
 ### 2. Information Architecture
+
 ```
 Project Card (Preview)
 ├── Image (with gradient overlay on hover)
@@ -43,6 +45,7 @@ Detail Modal (Full View)
 ```
 
 ### 3. Category System
+
 - **Backend** - Green (#10b981)
 - **Template** - Blue (#3b82f6)
 - **Tool** - Amber (#f59e0b)
@@ -130,6 +133,7 @@ src/app/Others/
 ## 🎬 Animation Features
 
 ### Card Animations
+
 ```typescript
 - Entrance: opacity 0→1, y: 20→0, stagger: 100ms
 - Hover: scale: 1→1.02, glow effect
@@ -138,6 +142,7 @@ src/app/Others/
 ```
 
 ### Modal Animations
+
 ```typescript
 - Backdrop: opacity 0→1, blur effect
 - Container: Spring transition, shared layout
@@ -147,6 +152,7 @@ src/app/Others/
 ```
 
 ### Filter Animations
+
 ```typescript
 - Active state: Layout ID animation
 - Gradient background: Smooth color transition
@@ -156,6 +162,7 @@ src/app/Others/
 ## 🔧 Customization Guide
 
 ### Add New Category
+
 ```typescript
 // In utils.ts
 case "newcategory":
@@ -172,22 +179,25 @@ export type ProjectCategory = "backend" | "template" | "tool" | "library" | "new
 ```
 
 ### Modify Grid Layout
+
 ```typescript
 // ProjectsGrid.tsx
-className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6";
 // Change lg:grid-cols-X for different column counts
 ```
 
 ### Adjust Animation Speed
+
 ```typescript
 // Slower animations
 transition={{ delay: index * 0.15 }} // Was 0.1
 
-// Faster animations  
+// Faster animations
 transition={{ duration: 0.2 }} // Was 0.3
 ```
 
 ### Change Color Scheme
+
 ```typescript
 // Update category colors in utils.ts
 // Update hover effects in components
@@ -197,6 +207,7 @@ transition={{ duration: 0.2 }} // Was 0.3
 ## 📊 Data Migration
 
 ### Current Data Format (static.ts)
+
 ```typescript
 {
   name: string;
@@ -210,6 +221,7 @@ transition={{ duration: 0.2 }} // Was 0.3
 ```
 
 ### New Format (Project type)
+
 ```typescript
 {
   id: number;
@@ -235,12 +247,14 @@ transition={{ duration: 0.2 }} // Was 0.3
 ### Migration Options
 
 **Option 1: Use conversion script**
+
 ```bash
 cd scripts
 ts-node convert-others-data.ts > ../src/app/Others/generated-constants.ts
 ```
 
 **Option 2: Manual conversion**
+
 - Copy template from constants.ts
 - Fill in your project data
 - Add enhanced details for featured projects
@@ -256,6 +270,7 @@ ts-node convert-others-data.ts > ../src/app/Others/generated-constants.ts
 ## 💡 Best Practices
 
 ### For Best User Experience
+
 - Keep card descriptions concise (2-3 lines)
 - Use high-quality project images (16:9 ratio)
 - Add details for your best/featured projects
@@ -263,12 +278,14 @@ ts-node convert-others-data.ts > ../src/app/Others/generated-constants.ts
 - Use consistent icon sizes and styles
 
 ### For Performance
+
 - Optimize images (Next.js Image component handles this)
 - Keep animation durations reasonable (200-300ms)
 - Limit number of animated particles
 - Use CSS transforms (not layout properties) for animations
 
 ### For Maintainability
+
 - Keep components small and focused
 - Use TypeScript for type safety
 - Follow the established pattern for new features
@@ -286,18 +303,23 @@ ts-node convert-others-data.ts > ../src/app/Others/generated-constants.ts
 ## 🐛 Common Issues & Solutions
 
 ### Issue: Cards don't animate on page load
+
 **Solution**: Ensure `LayoutGroup` wrapper exists in page.tsx
 
 ### Issue: Modal doesn't close with ESC key
+
 **Solution**: Check useEffect cleanup in DetailModal
 
 ### Issue: Images not loading
+
 **Solution**: Verify paths are relative to /public directory
 
 ### Issue: TypeScript errors
+
 **Solution**: Run `npm run type-check` and fix any type mismatches
 
 ### Issue: Filters don't update grid
+
 **Solution**: Check useMemo dependencies in page.tsx
 
 ## 📈 Performance Metrics
