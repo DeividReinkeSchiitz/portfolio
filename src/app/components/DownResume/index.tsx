@@ -26,7 +26,7 @@ function DownResume({ className, ...rest }: DownResumeProps) {
   return (
     <div
       className={`flex items-center justify-center ${className} ${rest} 
-            hover:cursor-pointer mt-5 hover:underline`}
+            hover:cursor-pointer hover:underline`}
       onClick={openDownloadUrl}
     >
       <Image

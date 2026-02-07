@@ -2,8 +2,7 @@ import Text from "@/app/components/Text";
 import Image from "next/image";
 
 interface ContactHeaderProps {
-  location: string;
-  availability: string;
+  locationText: string;
   title: string;
   description: string;
   locationIcon: string;
@@ -11,8 +10,7 @@ interface ContactHeaderProps {
 }
 
 export default function ContactHeader({
-  location,
-  availability,
+  locationText,
   title,
   description,
   locationIcon,
@@ -28,9 +26,10 @@ export default function ContactHeader({
           height={4}
           className="w-4 h-4 mr-1"
         />
-        <Text className="text-sm font-normal">
-          Based in <span>{location}</span> | Remote <span>{availability}</span>
-        </Text>
+        <Text
+          className="text-sm font-normal"
+          dangerouslySetInnerHTML={{ __html: locationText }}
+        />
         <Image
           src={globeIcon}
           alt="globe"
@@ -47,18 +46,10 @@ export default function ContactHeader({
         {title}
       </Text>
 
-      <Text className="text-center !text-xl md:text-xl mt-2 ml-10 mr-10 font-normal">
-        {description.split("reach me out").map((part, index) =>
-          index === 0 ? (
-            part
-          ) : (
-            <span key={index}>
-              <span>reach me out</span>
-              {part}
-            </span>
-          ),
-        )}
-      </Text>
+      <Text
+        className="text-center !text-xl md:text-xl mt-2 ml-10 mr-10 font-normal"
+        dangerouslySetInnerHTML={{ __html: description }}
+      />
     </div>
   );
 }

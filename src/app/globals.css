@@ -8,6 +8,34 @@
   --blue-RGB: 0, 199, 255;
   --background: #ffffff;
   --foreground: #171717;
+  /* Technology Colors - Auto-generated from colors.js */
+  --color-react: #58c4dc;
+  --color-react-native: #58c4dc;
+  --color-node-js: #3c873a;
+  --color-typescript: #3178c6;
+  --color-javascript: #f7df1e;
+  --color-next-js: #868686;
+  --color-postgresql: #008bb9;
+  --color-postgres: #008bb9;
+  --color-docker: #1d63ed;
+  --color-graphql: #e535ab;
+  --color-aws: #ff9900;
+  --color-tailwind-css: #0ea5e9;
+  --color-figma: #f24e1e;
+  --color-mongodb: #47a248;
+  --color-express: #d4d4d4;
+  --color-python: #3776ab;
+  --color-machine-learning: #ff6f00;
+  --color-flutter: #02569b;
+  --color-firebase: #ff8f00;
+  --color-redux: #764abc;
+  --color-golang: #4dd0e1;
+  --color-c: #3949ab;
+  --color-git: #f4511e;
+  --color-material-ui: #0073e6;
+  --color-styled-components: #f456ff;
+  --color-oracle-cloud: #f22327;
+  /* End Technology Colors */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,4 +67,13 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-raleway), Arial, Helvetica, serif;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }

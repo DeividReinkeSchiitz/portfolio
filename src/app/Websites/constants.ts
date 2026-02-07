@@ -10,7 +10,7 @@ export const websitesPageConfig = {
       src: website_svg,
       alt: "Website Projects",
       className:
-        "absolute w-10 h-10 md:w-20 md:h-20 mb-3 ml-2 bottom-[-10] right-12",
+        "absolute w-10 h-10 md:w-20 md:h-20 mb-3 ml-2  top-[-40] right-10",
     },
   ] as IconConfig[],
 };

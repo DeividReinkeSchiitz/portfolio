@@ -131,7 +131,7 @@ async function OthersList() {
   }
 
   return (
-    <div className="flex items-center mt-20 flex-wrap justify-center max-w-screen-xl w-full h-full">
+    <div className="flex items-center mt-20 flex-wrap justify-center self-center max-w-screen-xl w-full h-full">
       {cur_projects}
     </div>
   );

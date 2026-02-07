@@ -5,14 +5,15 @@ import { homeContent } from "./constants";
 
 export default function Home() {
   return (
-    <div className="relative mt-48 flex-col self-center items-center justify-center w-full h-full">
-      <div className="flex flex-col items-center justify-center w-full h-full">
-        <HomeTitle greeting={homeContent.greeting} />
+    <div className="flex flex-col relative self-center items-center justify-center w-full h-full">
+      <HomeTitle
+        greeting={homeContent.greeting}
+        description={homeContent.description}
+      />
 
-        <DownResume className="" />
+      <DownResume className="flex-1" />
 
-        <Frameworks />
-      </div>
+      <Frameworks />
     </div>
   );
 }

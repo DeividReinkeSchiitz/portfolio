@@ -10,8 +10,7 @@ export default function Contact() {
         <RadiusBlur />
 
         <ContactHeader
-          location={contactInfo.location.country}
-          availability={contactInfo.location.availability}
+          locationText={contactInfo.locationText}
           title={contactInfo.title}
           description={contactInfo.description}
           locationIcon={contactInfo.icons.location}

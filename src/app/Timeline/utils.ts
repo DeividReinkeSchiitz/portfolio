@@ -1,4 +1,5 @@
 import { TypeColors } from "./types";
+const { TECH_COLORS } = require("@/app/config/colors");
 
 export const getTypeColors = (
   type: "work" | "education" | "project" | "achievement",
@@ -43,4 +44,25 @@ export const hexToRgb = (hex: string): string => {
         16,
       )}`
     : "255, 255, 255";
+};
+
+export const getTechColor = (techName: string): string => {
+  const varName = `--color-${techName.toLowerCase().replace(/\s+/g, "-").replace(/\./g, "-")}`;
+  return `var(${varName}, ${TECH_COLORS[techName as keyof typeof TECH_COLORS] || "#fafafa"})`;
+};
+
+export const getTechColorValue = (techName: string): string => {
+  return TECH_COLORS[techName as keyof typeof TECH_COLORS] || "#fafafa";
+};
+
+export const getTimelineIcon = (
+  type: "work" | "education" | "project" | "achievement",
+): string => {
+  const iconMap = {
+    work: "work.svg",
+    education: "education.svg",
+    project: "project.svg",
+    achievement: "achievement.svg",
+  };
+  return iconMap[type];
 };

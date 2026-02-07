@@ -67,10 +67,7 @@ async function MobilesList() {
   }
 
   return (
-    <div
-      className="flex items-center h-full flex-col mt-20 w-full max-w-screen-xl md:gap-y-52
-            xl:gap-y-64 2xl:gap-y-80 "
-    >
+    <div className="flex items-center self-center h-full flex-col mt-20 w-full max-w-screen-xl md:gap-y-52 xl:gap-y-64 2xl:gap-y-80 ">
       {cur_mobiles}
     </div>
   );
