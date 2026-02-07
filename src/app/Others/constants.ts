@@ -139,15 +139,8 @@ export const projectsData: Project[] = [
     image: "/firebase.png",
     icon: "/firebase.svg",
     color: "#FFCA28",
-    stacks: [
-      "Firebase",
-      "Javascript",
-      "Controller",
-      "Authentication",
-      "CRUD",
-    ],
-    github:
-      "https://github.com/DeividReinkeSchiitz/FirebaseFunctionsTemplate",
+    stacks: ["Firebase", "Javascript", "Controller", "Authentication", "CRUD"],
+    github: "https://github.com/DeividReinkeSchiitz/FirebaseFunctionsTemplate",
     details: {
       fullDescription:
         "A production-ready template for Firebase Cloud Functions that provides a solid foundation for building serverless backend applications. Includes authentication, CRUD operations, and proper project structure.",
@@ -192,8 +185,7 @@ export const projectsData: Project[] = [
       "Environment",
       "Sequelize",
     ],
-    github:
-      "https://github.com/DeividReinkeSchiitz/FirebaseFunctionsTemplate",
+    github: "https://github.com/DeividReinkeSchiitz/FirebaseFunctionsTemplate",
     details: {
       fullDescription:
         "A comprehensive Node.js template for PostgreSQL-based applications. Features Express server setup, database connection management, CRUD operations, and Sequelize ORM integration for scalable backend development.",
@@ -263,4 +255,3 @@ export const projectsData: Project[] = [
     },
   },
 ];
-
