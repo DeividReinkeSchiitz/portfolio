@@ -4,13 +4,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { TimelineCardProps } from "../../types";
 import { getTypeColors } from "../../utils";
-import TimelineDot from "../TimelineCard/Components/TimelineDot";
-import YearBadge from "../TimelineCard/Components/YearBadge";
-import CardTitle from "../TimelineCard/Components/CardTitle";
-import CompanyInfo from "../TimelineCard/Components/CompanyInfo";
-import Description from "../TimelineCard/Components/Description";
-import TechnologyTags from "../TimelineCard/Components/TechnologyTags";
-import DetailsIndicator from "../TimelineCard/Components/DetailsIndicator";
+import TimelineDot from "./Components/TimelineDot";
+import YearBadge from "./Components/YearBadge";
+import CardTitle from "./Components/CardTitle";
+import CompanyInfo from "./Components/CompanyInfo";
+import Description from "./Components/Description";
+import TechnologyTags from "./Components/TechnologyTags";
+import DetailsIndicator from "./Components/DetailsIndicator";
+import ConnectorLine from "./Components/ConnectorLine";
 
 export default function TimelineCard({
   event,
@@ -124,6 +125,8 @@ export default function TimelineCard({
           )}
 
           {hasDetails && <DetailsIndicator />}
+
+          <ConnectorLine isLeft={isLeft} />
         </motion.div>
       </div>
     </div>

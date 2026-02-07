@@ -1,16 +1,16 @@
 import PageHeader from "@/app/components/PageHeader";
-import MobilesList from "@/app/components/MobilesList";
-import { mobilesPageConfig } from "./constants";
+import ProjectShowcase from "@/app/components/ProjectShowcase";
+import { mobilesPageConfig, mobileProjects } from "./constants";
 
 export default function Mobiles() {
   return (
-    <>
+    <div className="min-h-screen text-white relative pb-20">
       <PageHeader
         title={mobilesPageConfig.title}
         description={mobilesPageConfig.description}
         icons={mobilesPageConfig.icons}
       />
-      <MobilesList />
-    </>
+      <ProjectShowcase projects={mobileProjects} />
+    </div>
   );
 }

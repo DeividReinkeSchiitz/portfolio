@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Text from "@/app/components/Text";
 import { TimelineEvent, TypeColors } from "../../../types";
 
@@ -143,22 +144,16 @@ export default function DetailsContent({ event, colors }: DetailsContentProps) {
                 whileTap={{ scale: 0.95 }}
               >
                 <span className="text-white font-medium">{link.label}</span>
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <Image
+                  src="/external-link.svg"
+                  alt=""
+                  width={16}
+                  height={16}
                   className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
-                >
-                  <path
-                    d="M12 4L4 12M12 4H6M12 4V10"
-                    stroke={colors.solid}
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                  style={{
+                    filter: `brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(2073%) hue-rotate(${colors.solid})`,
+                  }}
+                />
               </motion.a>
             ))}
           </div>

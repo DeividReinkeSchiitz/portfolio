@@ -1,16 +1,16 @@
 import PageHeader from "@/app/components/PageHeader";
-import WebsitesList from "@/app/components/WebsitesList";
-import { websitesPageConfig } from "./constants";
+import WebsiteShowcase from "@/app/components/WebsiteShowcase";
+import { websitesPageConfig, websiteProjects } from "./constants";
 
 export default function Websites() {
   return (
-    <>
+    <div className="min-h-screen text-white relative">
       <PageHeader
         title={websitesPageConfig.title}
         description={websitesPageConfig.description}
         icons={websitesPageConfig.icons}
       />
-      <WebsitesList />
-    </>
+      <WebsiteShowcase projects={websiteProjects} />
+    </div>
   );
 }
