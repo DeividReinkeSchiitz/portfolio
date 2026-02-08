@@ -31,3 +31,6 @@ jobs:
           echo "Build completed successfully!"
           echo "Build directory contents:"
           ls -la build/ || echo "No build directory found"
+
+      - name: Restart portfolio service
+        run: sudo systemctl restart portfolio
