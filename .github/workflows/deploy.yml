@@ -14,6 +14,10 @@ jobs:
         with:
           clean: false
 
+      - name: add .env file
+        run: |
+          echo ${{ secrets.APP_ENV }} | base64 --decode > .env
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
