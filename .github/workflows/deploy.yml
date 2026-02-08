@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted
+    runs-on: [self-hosted, Linux, ARM64] # Exatamente como no seu print
     environment: production
 
     steps:
