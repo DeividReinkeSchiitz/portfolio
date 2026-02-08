@@ -1,5 +1,5 @@
 import { TypeColors } from "./types";
-const { colors } = require("@/app/colors");
+import { colors } from "@/app/colors";
 
 export const getTypeColors = (
   type: "work" | "education" | "project" | "achievement",

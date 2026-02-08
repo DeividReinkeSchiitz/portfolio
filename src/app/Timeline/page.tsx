@@ -2,9 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { LayoutGroup } from "framer-motion";
-import Header from "@/app/components/Header";
 import TimelineCard from "./components/Card";
-import RadiusBlur from "./components/RadiusBlur";
 import PageHeader from "@/app/components/PageHeader";
 import TimelineFooter from "./components/TimelineFooter";
 import TimelineDetailModal from "./components/DetailModal";

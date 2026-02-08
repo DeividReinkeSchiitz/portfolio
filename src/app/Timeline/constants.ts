@@ -1,7 +1,6 @@
 import { TimelineEvent } from "./types";
-import { IconConfig } from "@/app/components/PageHeader/types";
+import { colors } from "@/app/colors";
 import path_svg from "@/../public/path.svg";
-const { colors } = require("@/app/colors");
 
 export const timelinePageConfig = {
   title: "My <span>Journey</span>",

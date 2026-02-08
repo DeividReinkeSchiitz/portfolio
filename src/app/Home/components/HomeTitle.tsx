@@ -1,4 +1,3 @@
-import DownResume from "@/app/components/DownResume";
 import Text from "@/app/components/Text";
 
 interface HomeTitleProps {
