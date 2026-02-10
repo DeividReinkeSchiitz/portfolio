@@ -16,9 +16,9 @@ function StatusBadge() {
         ease: [0.16, 1, 0.3, 1],
       }}
     >
-      <span className="relative flex h-2 w-2">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-        <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+      <span className="relative flex h-2 w-2 justify-center items-center">
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-400 opacity-75" />
+        <span className="absolute rounded-full bg-amber-500 p-1 ml-[1px]" />
       </span>
       <span className="text-xs sm:text-sm text-white/50 font-medium tracking-wide">
         {homeContent.statusText}

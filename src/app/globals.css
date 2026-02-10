@@ -6,6 +6,15 @@
   --text-white: #fafafa;
   --blue: #00c7ff;
   --blue-RGB: 0, 199, 255;
+  --blue-50: #e0f7ff;
+  --blue-100: #b3ecff;
+  --blue-200: #80e0ff;
+  --blue-300: #4dd4ff;
+  --blue-400: #1ad9ff;
+  --blue-500: #00c7ff;
+  --blue-600: #00a0cc;
+  --blue-700: #008099;
+  --blue-800: #006066;
   /*  --background: #ffffff;
   --foreground: #171717;
 
@@ -102,6 +111,12 @@
   padding: 0;
 
   box-sizing: border-box;
+
+  /* when text selected change to --accent-cyan 50% */
+  &::selection {
+    background: var(--blue-700);
+    color: var(--text-white);
+  }
 }
 
 html,

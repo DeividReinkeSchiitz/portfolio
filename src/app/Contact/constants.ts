@@ -7,4 +7,30 @@ export const contactInfo = {
     location: "location.svg",
     globe: "globe_g.svg",
   },
+  social_medias: [
+    {
+      name: "LinkedIn",
+      description: "deividrs",
+      icon: "linkedin.svg",
+      link: "https://www.linkedin.com/in/deividrs/",
+    },
+    {
+      name: "Instagram",
+      description: "_deivid.rs_",
+      icon: "instagram.svg",
+      link: "https://www.instagram.com/_deivid.rs_/",
+    },
+    {
+      name: "GitHub",
+      description: "DeividReinkeSchiitz",
+      icon: "github.svg",
+      link: "https://github.com/DeividReinkeSchiitz",
+    },
+    {
+      name: "Email",
+      description: "deivid@schiitz.com",
+      icon: "email.svg",
+      link: "mailto:deivid@schiitz.com?subject=Hello&body=I%20wanted%20to%20reach%20out.",
+    },
+  ],
 };

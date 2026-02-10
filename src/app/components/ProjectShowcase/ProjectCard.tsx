@@ -48,23 +48,13 @@ export default function ProjectCard({
       {/* Image section */}
       <div className="relative h-48 overflow-hidden">
         <div className="h-full w-full">
-          {project.images[0] ? (
-            <Image
-              src={project.images[0]}
-              alt={project.name}
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover group-hover:scale-105 transition-transform duration-700"
-            />
-          ) : (
-            <div
-              className="w-full h-full"
-              style={{
-                background: `linear-gradient(135deg, ${project.color}30, ${project.color}08)`,
-              }}
-            />
-          )}
+          <Image
+            src={project.images[0]}
+            alt={project.name}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="group-hover:scale-105 transition-transform duration-700"
+          />
         </div>
 
         {/* Gradient overlay */}

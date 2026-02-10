@@ -1,10 +1,10 @@
 import DownResume from "@/app/components/DownResume";
-import Frameworks from "@/app/components/Frameworks";
+import Frameworks from "@/app/Home/components/Frameworks";
 import HomeTitle from "./components/HomeTitle";
 import GradientOrb from "./components/GradientOrb";
 import FloatingParticles from "./components/FloatingParticles";
 import AnimatedSection from "./components/AnimatedSection";
-import { ANIMATION_DELAYS } from "./constants";
+import { ANIMATION_DELAYS, frameworks } from "./constants";
 import "./styles.css";
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* Frameworks grid — animated entrance */}
       <AnimatedSection delay={ANIMATION_DELAYS.frameworks}>
-        <Frameworks />
+        <Frameworks frameworks={frameworks} />
       </AnimatedSection>
     </div>
   );

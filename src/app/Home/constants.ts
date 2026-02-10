@@ -1,3 +1,4 @@
+import { colors } from "@/app/colors";
 import type { DescriptionLine, ParticleConfig } from "./types";
 
 export const homeContent = {
@@ -27,6 +28,49 @@ export const descriptionLines: DescriptionLine[] = [
   [{ text: "Websites", highlighted: false }],
 ];
 
+export const frameworks = [
+  {
+    name: "Postgres",
+    icon: "postgres.svg",
+    color: colors.Postgres,
+  },
+  {
+    name: "Docker",
+    icon: "docker.svg",
+    color: colors.Docker,
+  },
+  {
+    name: "Node.js",
+    icon: "node.svg",
+    color: colors["Node.js"],
+  },
+  {
+    name: "React",
+    icon: "react.svg",
+    color: colors.React,
+  },
+  {
+    name: "TypeScript",
+    icon: "typescript.svg",
+    color: colors.TypeScript,
+  },
+  {
+    name: "Golang",
+    icon: "golang.svg",
+    color: colors.Golang,
+  },
+  {
+    name: "C",
+    icon: "c.svg",
+    color: colors.C,
+  },
+  {
+    name: "Git",
+    icon: "git.svg",
+    color: colors.Git,
+  },
+];
+
 export const ANIMATION_DELAYS = {
   statusBadge: 0.1,
   greeting: 0.3,
@@ -35,7 +79,7 @@ export const ANIMATION_DELAYS = {
   wordStagger: 0.04,
   downResume: 1,
   frameworks: 1.3,
-} as const;
+};
 
 export const PARTICLES: ParticleConfig[] = Array.from(
   { length: 12 },
