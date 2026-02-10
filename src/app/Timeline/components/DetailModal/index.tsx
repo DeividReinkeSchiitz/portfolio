@@ -70,7 +70,7 @@ export default function TimelineDetailModal({
           <motion.div
             layout
             layoutId={`card-container-${event.id}`}
-            className="relative w-full max-w-4xl max-h-[95vh] overflow-hidden rounded-3xl shadow-2xl"
+            className="relative w-full overflow-hidden rounded-3xl shadow-2xl"
             style={{
               background:
                 "linear-gradient(135deg, var(--modal-gradient-start) 0%, var(--modal-gradient-end) 100%)",
@@ -84,7 +84,7 @@ export default function TimelineDetailModal({
             <CloseButton onClose={onClose} />
 
             {/* Scrollable Content */}
-            <div className="overflow-y-auto max-h-[95vh] scrollbar-hide pb-16">
+            <div className="overflow-y-auto max-h-[98vh] scrollbar-hide pb-16">
               <HeroSection event={event} colors={colors} />
               {hasDetails && <DetailsContent event={event} colors={colors} />}
             </div>

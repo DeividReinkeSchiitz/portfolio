@@ -19,6 +19,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <motion.div
+      id={project.id}
       layout
       layoutId={`card-container-${project.id}`}
       initial={{ opacity: 0, y: 40 }}
@@ -46,16 +47,14 @@ export default function ProjectCard({
       />
 
       {/* Image section */}
-      <div className="relative h-48 overflow-hidden">
-        <div className="h-full w-full">
-          <Image
-            src={project.images[0]}
-            alt={project.name}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="group-hover:scale-105 transition-transform duration-700"
-          />
-        </div>
+      <div className="h-48 overflow-hidden relative">
+        <Image
+          src={project.images[0]}
+          alt={project.name}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover group-hover:scale-105 transition-transform duration-700"
+        />
 
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--primary-bg)] via-transparent to-transparent" />

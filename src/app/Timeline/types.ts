@@ -11,7 +11,11 @@ export interface TimelineEvent {
     fullDescription?: string;
     responsibilities?: string[];
     achievements?: string[];
-    links?: { label: string; url: string }[];
+    links?: {
+      label: string;
+      url: string;
+      linkType?: "internal" | "external";
+    }[];
   };
 }
 

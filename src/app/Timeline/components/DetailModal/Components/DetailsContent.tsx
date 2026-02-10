@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import Text from "@/app/components/Text";
 import { TimelineEvent, TypeColors } from "../../../types";
 
@@ -124,38 +125,55 @@ export default function DetailsContent({ event, colors }: DetailsContentProps) {
             Related Links
           </h2>
           <div className="flex flex-wrap gap-4">
-            {event.details.links.map((link, idx) => (
-              <motion.a
-                key={idx}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-3 px-6 py-3 rounded-xl 
-                  bg-white bg-opacity-5 border border-white border-opacity-10
-                  hover:bg-opacity-10 hover:border-opacity-30
-                  transition-all duration-200"
-                style={{
-                  borderColor: colors.solid,
-                }}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.85 + idx * 0.1 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span className="text-white font-medium">{link.label}</span>
-                <Image
-                  src="/external-link.svg"
-                  alt=""
-                  width={16}
-                  height={16}
-                  className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
-                  style={{
-                    filter: `brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(2073%) hue-rotate(${colors.solid})`,
-                  }}
-                />
-              </motion.a>
-            ))}
+            {event.details.links.map((link, idx) => {
+              const isInternal = link.linkType === "internal";
+              const LinkWrapper = isInternal ? Link : "a";
+              const linkProps = isInternal
+                ? { href: link.url }
+                : {
+                    href: link.url,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  };
+
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.85 + idx * 0.1 }}
+                >
+                  <LinkWrapper
+                    {...linkProps}
+                    className="group flex items-center gap-3 px-6 py-3 rounded-xl 
+                      bg-white bg-opacity-5 border border-white border-opacity-10
+                      hover:bg-opacity-10 hover:border-opacity-30
+                      transition-all duration-200 hover:scale-105 active:scale-95"
+                    style={{
+                      borderColor: colors.solid,
+                    }}
+                  >
+                    <span className="text-white font-medium">{link.label}</span>
+                    {isInternal ? (
+                      <span className="text-white text-lg group-hover:translate-x-1 transition-transform">
+                        →
+                      </span>
+                    ) : (
+                      <Image
+                        src="/external-link.svg"
+                        alt=""
+                        width={16}
+                        height={16}
+                        className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
+                        style={{
+                          filter: `brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(2073%) hue-rotate(${colors.solid})`,
+                        }}
+                      />
+                    )}
+                  </LinkWrapper>
+                </motion.div>
+              );
+            })}
           </div>
         </motion.section>
       )}

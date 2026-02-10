@@ -21,6 +21,7 @@ export default function WebsiteCard({
 
   return (
     <motion.article
+      id={project.id}
       layout
       layoutId={`web-card-${project.id}`}
       initial={{ opacity: 0, x: isEven ? -60 : 60 }}
