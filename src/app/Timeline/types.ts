@@ -7,6 +7,7 @@ export interface TimelineEvent {
   type: "work" | "education" | "project" | "achievement";
   technologies?: string[];
   location?: string;
+  image?: string;
   details?: {
     fullDescription?: string;
     responsibilities?: string[];

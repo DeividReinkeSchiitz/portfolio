@@ -30,6 +30,12 @@ const colors = {
   "Material UI": "#0073E6",
   "Styled-Components": "#F456FF",
   "Oracle Cloud": "#f22327",
+  "AWS Lambda": "#FF9900",
+  "AWS CloudFormation": "#789e3f",
+  NoSQL: "#00ED64",
+  "AWS CLI": "#708080",
+  Expo: "#808080",
+  Java: "#eb2025",
 
   // UI Theme Colors
   "primary-bg": "#0a0a0a",

@@ -20,6 +20,52 @@ export const technologyColors: Record<string, string> = colors;
 
 export const timelineData: TimelineEvent[] = [
   {
+    id: 0,
+    year: "2025 - Present",
+    title: "Full Stack Developer",
+    company: "Fleye",
+    image: "/fleye.avif",
+    description:
+      "Full-stack development for digital products, specializing in cross-platform mobile apps, serverless AWS architectures and modular monoliths backends.",
+    type: "work",
+    technologies: [
+      "React Native",
+      "Node.js",
+      "AWS Lambda",
+      "NoSQL",
+      "AWS CLI",
+      "Expo",
+      "MongoDB",
+    ],
+    location: "Remote / Brazil",
+    details: {
+      fullDescription:
+        "Working as a Software Developer at Fleye, a digital product studio focused on community-driven applications. Responsible for the end-to-end development of mobile solutions using React Native and Expo, backed by robust serverless infrastructures on AWS. The role involves architecting scalable backend systems, automating infrastructure deployment, and creating fluid user experiences for content-heavy applications.",
+      responsibilities: [
+        "Developing cross-platform mobile applications using React Native and Expo",
+        "Architecting and maintaining serverless backend services using AWS Lambda and Node.js",
+        "Managing cloud infrastructure as code (IaC) with AWS CloudFormation and CLI",
+        "Implementing NoSQL database solutions (MongoDB) for efficient data management",
+        "Building custom administrative interfaces for dynamic content updates",
+        "Optimizing application performance and implementing offline-first media features",
+      ],
+      achievements: [
+        "Contributed to the IELB+ app, a streaming platform centralizing music, books, and audio for the Lutheran community",
+        "Developed features for the Capela app, including the 'Plano de Vida' recurrence management system",
+        "Implemented a no-code administrative framework allowing clients to manage app content independently",
+        "Designed scalable serverless architectures to handle high-concurrency usage events",
+      ],
+      links: [
+        { label: "Fleye", url: "https://fleye.com.br/" },
+        { label: "Case: IELB+", url: "https://fleye.com.br/our-stories/ielb" },
+        {
+          label: "Case: Capela",
+          url: "https://fleye.com.br/our-stories/capela",
+        },
+      ],
+    },
+  },
+  {
     id: 1,
     year: "Jul 2024 - Aug 2024",
     title: "Santander Coders — Coding Tank",
@@ -82,7 +128,7 @@ export const timelineData: TimelineEvent[] = [
   },
   {
     id: 3,
-    year: "Dec 2021 - Aug 2022",
+    year: "2021 - 2022",
     title: "Software Developer",
     company: "Brbyte",
     description:

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Text from "@/app/components/Text";
 import { TimelineEvent, TypeColors } from "../../../types";
 import { getTechColor, getTimelineIcon } from "../../../utils";
+import GradientOverlay from "@/app/Others/components/DetailModal/Components/GradientOverlay";
 
 interface HeroSectionProps {
   event: TimelineEvent;
