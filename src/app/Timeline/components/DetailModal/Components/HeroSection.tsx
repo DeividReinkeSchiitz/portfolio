@@ -3,7 +3,6 @@ import Image from "next/image";
 import Text from "@/app/components/Text";
 import { TimelineEvent, TypeColors } from "../../../types";
 import { getTechColor, getTimelineIcon } from "../../../utils";
-import GradientOverlay from "@/app/Others/components/DetailModal/Components/GradientOverlay";
 
 interface HeroSectionProps {
   event: TimelineEvent;
@@ -25,7 +24,6 @@ export default function HeroSection({ event, colors }: HeroSectionProps) {
       />
 
       <div className="relative">
-        {/* Type Icon */}
         <motion.div
           layout
           layoutId={`timeline-icon-${event.id}`}
@@ -43,7 +41,6 @@ export default function HeroSection({ event, colors }: HeroSectionProps) {
             className="w-8 h-8"
           />
         </motion.div>
-
         {/* Year Badge */}
         <motion.div
           layout
@@ -54,7 +51,6 @@ export default function HeroSection({ event, colors }: HeroSectionProps) {
         >
           <Text className="!text-sm font-bold text-white">{event.year}</Text>
         </motion.div>
-
         {/* Title */}
         <motion.div
           layout
@@ -65,7 +61,6 @@ export default function HeroSection({ event, colors }: HeroSectionProps) {
             {event.title}
           </Text>
         </motion.div>
-
         {/* Company & Location */}
         <motion.div
           layout
@@ -86,7 +81,6 @@ export default function HeroSection({ event, colors }: HeroSectionProps) {
             </>
           )}
         </motion.div>
-
         {/* Short Description */}
         <motion.div
           layout
@@ -97,7 +91,6 @@ export default function HeroSection({ event, colors }: HeroSectionProps) {
             {event.description}
           </Text>
         </motion.div>
-
         {/* Technologies */}
         {event.technologies && event.technologies.length > 0 && (
           <motion.div

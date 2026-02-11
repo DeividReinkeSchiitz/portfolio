@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function DetailsIndicator() {
   return (
     <div className="mt-4 flex items-center justify-center gap-2 text-xs text-white opacity-50 group-hover:opacity-70 transition-opacity">

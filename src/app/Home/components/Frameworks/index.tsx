@@ -17,7 +17,7 @@ interface FrameworkItemProps {
   index: number;
 }
 
-function FrameworkItem({ icon, name, color, index }: FrameworkItemProps) {
+function FrameworkItem({ icon, name, color }: FrameworkItemProps) {
   return (
     <div
       className={`flex items-center justify-evenly border-[1px] p-2 pl-3 pr-3 rounded-md
