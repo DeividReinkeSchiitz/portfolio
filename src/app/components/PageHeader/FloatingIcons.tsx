@@ -52,7 +52,7 @@ export default function FloatingIcons({ icons }: FloatingIconsProps) {
               alt={icon.alt}
               width={64}
               height={64}
-              className="w-full h-full"
+              className="w-full h-auto"
             />
           </motion.div>
         </motion.div>

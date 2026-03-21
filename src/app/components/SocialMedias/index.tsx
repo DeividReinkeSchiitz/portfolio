@@ -42,10 +42,9 @@ function SocialMedias({ className, social_medias }: SocialMediasProps) {
           <Image
             src={social_medias[i].icon}
             alt={social_medias[i].name}
-            objectFit={"contain"}
             width={30}
             height={30}
-            className={`w-[30px] h-[30px] z-10`}
+            className={`w-[30px] h-[30px] z-10 object-contain`}
           />
         </div>
 

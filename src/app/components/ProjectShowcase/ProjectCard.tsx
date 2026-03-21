@@ -52,9 +52,9 @@ export default function ProjectCard({
           src={project.images[0]}
           alt={project.name}
           fill
-          objectFit="cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="group-hover:scale-105 transition-transform duration-700"
+          className="object-cover group-hover:scale-105 transition-transform duration-700"
+          priority={index === 0}
         />
 
         {/* Gradient overlay */}
