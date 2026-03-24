@@ -3,53 +3,11 @@
 import { useEffect, useCallback } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { ShowcaseProject } from "./types";
-import TechStackGrid from "./TechStackGrid";
-import ImageGallery from "./ImageGallery";
-
-interface ProjectDetailProps {
-  project: ShowcaseProject;
-  onClose: () => void;
-  onNavigate: (direction: "prev" | "next") => void;
-  currentIndex: number;
-  totalProjects: number;
-}
-
-const overlayVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
-  exit: { opacity: 0, transition: { duration: 0.3, delay: 0.1 } },
-};
-
-const contentVariants = {
-  hidden: { opacity: 0, y: 60, scale: 0.96 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.6,
-      ease: [0.16, 1, 0.3, 1] as const,
-      staggerChildren: 0.06,
-      delayChildren: 0.15,
-    },
-  },
-  exit: {
-    opacity: 0,
-    y: 40,
-    scale: 0.97,
-    transition: { duration: 0.35, ease: [0.4, 0, 1, 1] as const },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 24 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as const },
-  },
-};
+import { ProjectDetailProps } from "./types";
+import { overlayVariants, contentVariants, itemVariants } from "./constants";
+import SectionTitle from "./SectionTitle";
+import TechStackGrid from "../TechStackGrid";
+import ImageGallery from "../ImageGallery";
 
 export default function ProjectDetail({
   project,
@@ -61,7 +19,6 @@ export default function ProjectDetail({
   const { scrollYProgress } = useScroll();
   const headerOpacity = useTransform(scrollYProgress, [0, 0.15], [0, 1]);
 
-  // Keyboard navigation
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -424,13 +381,5 @@ export default function ProjectDetail({
         </div>
       </motion.div>
     </motion.div>
-  );
-}
-
-function SectionTitle({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 className="text-xs uppercase tracking-[0.2em] text-white/30 font-semibold mb-5">
-      {children}
-    </h2>
   );
 }

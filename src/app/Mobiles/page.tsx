@@ -1,5 +1,5 @@
 import PageHeader from "@/app/components/PageHeader";
-import ProjectShowcase from "@/app/components/ProjectShowcase";
+import MobileShowcases from "@/app/Mobiles/components/MobileShowcases";
 import { mobilesPageConfig, mobileProjects } from "./constants";
 
 export default function Mobiles() {
@@ -10,7 +10,7 @@ export default function Mobiles() {
         description={mobilesPageConfig.description}
         icons={mobilesPageConfig.icons}
       />
-      <ProjectShowcase projects={mobileProjects} />
+      <MobileShowcases projects={mobileProjects} />
     </div>
   );
 }

@@ -2,21 +2,15 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ShowcaseProject } from "./types";
+import ImageWithSkeleton from "@/app/components/ImageWithSkeleton";
+import { MobileCardProps } from "./types";
 
-interface ProjectCardProps {
-  project: ShowcaseProject;
-  index: number;
-  onClick: () => void;
-  isActive: boolean;
-}
-
-export default function ProjectCard({
+export default function MobileCard({
   project,
   index,
   onClick,
   isActive,
-}: ProjectCardProps) {
+}: MobileCardProps) {
   return (
     <motion.div
       id={project.id}
@@ -48,13 +42,12 @@ export default function ProjectCard({
 
       {/* Image section */}
       <div className="h-48 overflow-hidden relative">
-        <Image
+        <ImageWithSkeleton
           src={project.images[0]}
           alt={project.name}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover group-hover:scale-105 transition-transform duration-700"
-          priority={index === 0}
         />
 
         {/* Gradient overlay */}

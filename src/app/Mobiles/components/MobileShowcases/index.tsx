@@ -2,15 +2,11 @@
 
 import { useState, useCallback } from "react";
 import { AnimatePresence } from "framer-motion";
-import ProjectCard from "./ProjectCard";
-import ProjectDetail from "./ProjectDetail";
-import { ShowcaseProject } from "./types";
+import MobileCard from "./MobileCard";
+import MobileCardDetail from "./MobileCardDetail";
+import { MobileProps, ShowcaseProject } from "./types";
 
-interface ProjectShowcaseProps {
-  projects: ShowcaseProject[];
-}
-
-export default function ProjectShowcase({ projects }: ProjectShowcaseProps) {
+export default function MobileShowcases({ projects }: MobileProps) {
   const [activeProject, setActiveProject] = useState<ShowcaseProject | null>(
     null,
   );
@@ -43,7 +39,7 @@ export default function ProjectShowcase({ projects }: ProjectShowcaseProps) {
       {/* Grid of project cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
-          <ProjectCard
+          <MobileCard
             key={project.id}
             project={project}
             index={index}
@@ -56,7 +52,7 @@ export default function ProjectShowcase({ projects }: ProjectShowcaseProps) {
       {/* Full-page detail overlay with transitions */}
       <AnimatePresence mode="wait">
         {activeProject && (
-          <ProjectDetail
+          <MobileCardDetail
             key={activeProject.id}
             project={activeProject}
             onClose={handleClose}

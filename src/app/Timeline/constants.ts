@@ -51,9 +51,9 @@ export const timelineData: TimelineEvent[] = [
       ],
       achievements: [
         "Contributed to the IELB+ app, a streaming platform centralizing music, books, and audio for the Lutheran community",
-        "Developed features for the Capela app, including the 'Plano de Vida' recurrence management system",
+        "Contributed to construction and development of new features for the Capela app, including the Litugy, meditations, novena, life plan and many other modules",
         "Implemented a no-code administrative framework allowing clients to manage app content independently",
-        "Designed scalable serverless architectures to handle high-concurrency usage events",
+        "Improved architectures to handle high-concurrency usage events",
       ],
       links: [
         { label: "Fleye", url: "https://fleye.com.br/" },

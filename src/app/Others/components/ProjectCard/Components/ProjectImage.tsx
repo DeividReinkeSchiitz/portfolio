@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ImageWithSkeleton from "@/app/components/ImageWithSkeleton";
 
 interface ProjectImageProps {
   image: string;
@@ -22,7 +22,7 @@ export default function ProjectImage({
       }}
     >
       <div className="relative w-full aspect-video">
-        <Image
+        <ImageWithSkeleton
           src={image}
           alt={name}
           fill

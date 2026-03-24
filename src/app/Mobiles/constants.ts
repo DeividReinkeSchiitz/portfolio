@@ -1,7 +1,7 @@
 import phone_svg from "@/../public/phone.svg";
 import battery_svg from "@/../public/battery.svg";
 import { IconConfig } from "@/app/components/PageHeader/types";
-import { ShowcaseProject } from "@/app/components/ProjectShowcase/types";
+import { ShowcaseProject } from "@/app/Mobiles/components/MobileShowcases/types";
 import { colors } from "@/app/colors";
 
 export const mobilesPageConfig = {

@@ -1,5 +1,5 @@
 import PageHeader from "@/app/components/PageHeader";
-import WebsiteShowcase from "@/app/components/WebsiteShowcase";
+import WebsiteShowcase from "@/app/Websites/WebsiteShowcase";
 import { websitesPageConfig, websiteProjects } from "./constants";
 
 export default function Websites() {

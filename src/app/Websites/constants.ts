@@ -1,6 +1,6 @@
 import website_svg from "@/../public/website.svg";
 import { IconConfig } from "@/app/components/PageHeader/types";
-import { WebShowcaseProject } from "@/app/components/WebsiteShowcase/types";
+import { WebShowcaseProject } from "@/app/Websites/WebsiteShowcase/types";
 
 export const websitesPageConfig = {
   title: "Website Projects",

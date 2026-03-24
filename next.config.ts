@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   //set output directory
   distDir: "build",
   images: {
-    qualities: [60, 75, 85, 90, 95],
+    qualities: [60, 75, 85, 90, 95, 100],
   },
 };
 

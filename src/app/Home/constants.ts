@@ -82,14 +82,14 @@ export const ANIMATION_DELAYS = {
 };
 
 export const PARTICLES: ParticleConfig[] = Array.from(
-  { length: 12 },
+  { length: 36 },
   (_, i) => ({
     id: i,
     x: (i * 37 + 13) % 100,
     y: (i * 53 + 7) % 100,
     size: 2 + ((i * 17) % 4),
-    duration: 15 + ((i * 23) % 15),
-    delay: (i * 1.3) % 8,
+    duration: 45 + ((i * 23) % 30),
+    delay: (i * 0.2) % 1,
     opacity: 0.08 + ((i * 11) % 15) / 100,
   }),
 );

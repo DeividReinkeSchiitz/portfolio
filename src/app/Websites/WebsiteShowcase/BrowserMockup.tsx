@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+import ImageWithSkeleton from "@/app/components/ImageWithSkeleton";
 
 interface BrowserMockupProps {
   src: string;
@@ -45,7 +45,13 @@ export default function BrowserMockup({
         className="relative rounded-b-xl overflow-hidden border border-white/[0.06] border-t-0 bg-[var(--browser-viewport)]"
         style={{ aspectRatio: "16/10" }}
       >
-        <Image src={src} alt={alt} fill className="object-cover" quality={95} />
+        <ImageWithSkeleton
+          src={src}
+          alt={alt}
+          fill
+          className="object-cover"
+          quality={95}
+        />
 
         {/* Subtle reflection */}
         <div

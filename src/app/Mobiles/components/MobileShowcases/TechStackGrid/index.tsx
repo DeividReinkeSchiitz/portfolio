@@ -2,12 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ShowcaseStack } from "./types";
-
-interface TechStackGridProps {
-  stacks: ShowcaseStack[];
-  accentColor: string;
-}
+import { TechStackGridProps } from "./types";
 
 export default function TechStackGrid({
   stacks,

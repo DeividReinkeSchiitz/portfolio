@@ -3,12 +3,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-
-interface ImageGalleryProps {
-  images: string[];
-  projectName: string;
-  accentColor: string;
-}
+import ImageWithSkeleton from "@/app/components/ImageWithSkeleton";
+import { ImageGalleryProps } from "./types";
 
 export default function ImageGallery({
   images,
@@ -32,14 +28,14 @@ export default function ImageGallery({
             transition={{ duration: 0.25, ease: "easeInOut" }}
             className="absolute inset-0"
           >
-            <Image
+            <ImageWithSkeleton
               src={images[activeImage]}
               alt={`${projectName} screenshot ${activeImage + 1}`}
               fill
-              loading="lazy"
-              sizes="(max-width: 768px) 100vw, 800px"
+              loading="eager"
+              sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(100vw - 3rem), 1024px"
               className="object-contain"
-              quality={85}
+              quality={100}
             />
           </motion.div>
         </AnimatePresence>
@@ -71,13 +67,13 @@ export default function ImageGallery({
                   : undefined
               }
             >
-              <Image
+              <ImageWithSkeleton
                 src={img}
                 alt={`${projectName} thumbnail ${i + 1}`}
                 fill
-                loading="lazy"
+                loading="eager"
                 sizes="80px"
-                className="object-cover"
+                className="object-cover w-auto h-auto"
                 quality={60}
               />
             </button>

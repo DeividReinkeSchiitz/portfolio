@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ImageWithSkeleton from "@/app/components/ImageWithSkeleton";
 import Text from "@/app/components/Text";
 import { Project, CategoryColors } from "../../../types";
 import { getCategoryLabel } from "../../../utils";
@@ -13,12 +14,11 @@ export default function ModalHero({ project, colors }: ModalHeroProps) {
     <div className="relative">
       {/* Hero Image */}
       <div className="relative w-full h-64 md:h-96 overflow-hidden">
-        <Image
+        <ImageWithSkeleton
           src={project.image}
           alt={project.name}
           fill
           className="object-cover"
-          priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/80" />
       </div>

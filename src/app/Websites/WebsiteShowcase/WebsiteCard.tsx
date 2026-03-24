@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import ImageWithSkeleton from "@/app/components/ImageWithSkeleton";
 import { WebShowcaseProject } from "./types";
 
 interface WebsiteCardProps {
@@ -69,12 +70,11 @@ export default function WebsiteCard({
             className="relative rounded-b-lg overflow-hidden border border-white/[0.06] border-t-0"
             style={{ aspectRatio: "16/10" }}
           >
-            <Image
+            <ImageWithSkeleton
               src={project.image}
               alt={project.name}
               fill
               className="object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
-              quality={90}
             />
             <div
               className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"

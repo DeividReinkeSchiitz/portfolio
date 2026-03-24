@@ -19,3 +19,7 @@ export interface ShowcaseProject {
   highlights: string[];
   color: string;
 }
+
+export interface MobileProps {
+  projects: ShowcaseProject[];
+}

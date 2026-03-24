@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import ImageWithSkeleton from "@/app/components/ImageWithSkeleton";
 import Link from "next/link";
 import Text from "@/app/components/Text";
 import { TimelineEvent, TypeColors } from "../../../types";
@@ -125,11 +126,12 @@ export default function DetailsContent({ event, colors }: DetailsContentProps) {
           }}
         >
           <div className="relative w-full aspect-video md:aspect-[16/9]">
-            <Image
+            <ImageWithSkeleton
               src={event.image}
               alt={`${event.company} team`}
               fill
               className="object-cover"
+              preload={true}
               quality={90}
             />
             {/* Gradient overlay for better text contrast */}

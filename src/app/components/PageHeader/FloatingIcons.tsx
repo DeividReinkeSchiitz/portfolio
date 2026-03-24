@@ -53,6 +53,7 @@ export default function FloatingIcons({ icons }: FloatingIconsProps) {
               width={64}
               height={64}
               className="w-full h-auto"
+              style={{ height: "auto" }}
             />
           </motion.div>
         </motion.div>
