@@ -19,26 +19,24 @@ export default function ImageGallery({
     <div className="space-y-4">
       {/* Main image */}
       <div className="relative rounded-2xl overflow-hidden border border-white/[0.06] bg-white/[0.02] aspect-[16/9]">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeImage}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="absolute inset-0"
-          >
-            <ImageWithSkeleton
-              src={images[activeImage]}
-              alt={`${projectName} screenshot ${activeImage + 1}`}
-              fill
-              loading="eager"
-              sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(100vw - 3rem), 1024px"
-              className="object-contain"
-              quality={100}
-            />
-          </motion.div>
-        </AnimatePresence>
+        <motion.div
+          key={activeImage}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25, ease: "easeInOut" }}
+          className="absolute inset-0"
+        >
+          <ImageWithSkeleton
+            src={images[activeImage]}
+            alt={`${projectName} screenshot ${activeImage + 1}`}
+            fill
+            loading="eager"
+            sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(100vw - 3rem), 1024px"
+            className="object-contain"
+            quality={100}
+          />
+        </motion.div>
 
         {/* Ambient color */}
         <div
