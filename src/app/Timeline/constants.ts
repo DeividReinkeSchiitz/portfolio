@@ -24,7 +24,7 @@ export const timelineData: TimelineEvent[] = [
     year: "2025 - Present",
     title: "Full Stack Developer",
     company: "Fleye",
-    image: "/fleye.avif",
+    image: "/fleye.webp",
     description:
       "Full-stack development for digital products, specializing in cross-platform mobile apps, serverless AWS architectures and modular monoliths backends.",
     type: "work",
