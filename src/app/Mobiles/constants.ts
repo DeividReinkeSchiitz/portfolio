@@ -46,7 +46,7 @@ export const mobileProjects: ShowcaseProject[] = [
       "Designed an offline-first architecture so students can check grades without connectivity",
       "Handled authentication flow mirroring the institution's session-based login",
       "Implemented PDF download and local file caching for class materials",
-      "Used by students across multiple campuses of a Brazilian Federal Institute",
+      "Used by students of a Brazilian Federal Institute",
     ],
     stacks: [
       {
