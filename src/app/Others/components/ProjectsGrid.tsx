@@ -15,10 +15,11 @@ export default function ProjectsGrid({
 }: ProjectsGridProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4 grid-auto-rows-fr">
-      <AnimatePresence mode="sync">
+      <AnimatePresence mode="popLayout">
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
+            layout
             className="h-full"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}

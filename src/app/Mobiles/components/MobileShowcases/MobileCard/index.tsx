@@ -47,7 +47,8 @@ export default function MobileCard({
           alt={project.name}
           fill
           quality={60}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-idth: 1200px) 50vw, 33vw"
+          objectFit="cover"
           className="group-hover:scale-105 transition-transform duration-700"
         />
 

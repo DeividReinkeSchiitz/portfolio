@@ -114,7 +114,7 @@ export default function TimelineDetailModal({
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="max-w-5xl mx-auto px-4 sm:px-6 pt-4 pb-16"
+              className="max-w-7xl mx-auto px-4 sm:px-6 pt-4 pb-16"
             >
               {/* Back button */}
               <motion.div variants={itemVariants} className="mb-8">

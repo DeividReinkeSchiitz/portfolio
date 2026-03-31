@@ -5,7 +5,7 @@ import { LayoutGroup } from "framer-motion";
 import TimelineCard from "./components/Card";
 import PageHeader from "@/app/components/PageHeader";
 import TimelineFooter from "./components/TimelineFooter";
-import TimelineDetailModal from "./components/DetailModal";
+import TimelineDetailModal from "./components/TimelineDetailModal";
 import { timelineData, timelinePageConfig } from "./constants";
 import { TimelineEvent } from "./types";
 import { getTypeColors } from "@/app/Timeline/utils";

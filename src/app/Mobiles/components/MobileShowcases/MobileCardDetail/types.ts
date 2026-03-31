@@ -1,6 +1,6 @@
 import { ShowcaseProject } from "../types";
 
-export interface ProjectDetailProps {
+export interface MobileCardDetailProps {
   project: ShowcaseProject;
   onClose: () => void;
   onNavigate: (direction: "prev" | "next") => void;

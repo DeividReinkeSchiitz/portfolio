@@ -3,19 +3,19 @@
 import { useEffect, useCallback } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { ProjectDetailProps } from "./types";
+import { MobileCardDetailProps } from "./types";
 import { overlayVariants, contentVariants, itemVariants } from "./constants";
 import SectionTitle from "./SectionTitle";
 import TechStackGrid from "../TechStackGrid";
 import ImageGallery from "../ImageGallery";
 
-export default function ProjectDetail({
+export default function MobileCardDetail({
   project,
   onClose,
   onNavigate,
   currentIndex,
   totalProjects,
-}: ProjectDetailProps) {
+}: MobileCardDetailProps) {
   const { scrollYProgress } = useScroll();
   const headerOpacity = useTransform(scrollYProgress, [0, 0.15], [0, 1]);
 

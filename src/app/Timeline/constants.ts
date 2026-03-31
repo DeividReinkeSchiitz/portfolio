@@ -140,6 +140,31 @@ export const timelineData: TimelineEvent[] = [
     },
   },
   {
+    id: 4,
+    year: "2022 - 2025",
+    title: "Undergraduate Research — LEXA Lab",
+    company: "Federal University of Mato Grosso do Sul (UFMS)",
+    description:
+      "Implemented a Large Neighborhood Search matheuristic for the Course Discipline Allocation Problem, combining destroy-and-repair operators with exact solving for high-quality timetabling solutions.",
+    type: "achievement",
+    location: "Campo Grande, Brazil",
+    details: {
+      fullDescription:
+        "Conducted undergraduate research at LEXA Lab (UFMS) in combinatorial optimization applied to educational timetabling. Designed and implemented a Large Neighborhood Search (LNS) matheuristic to solve the Course Discipline Allocation Problem, integrating destroy-and-repair operators with exact solving techniques to produce high-quality timetabling solutions.",
+      responsibilities: [
+        "Designing and implementing a Large Neighborhood Search (LNS) matheuristic for timetabling optimization",
+        "Developing destroy-and-repair operators tailored to the Course Discipline Allocation Problem",
+        "Integrating exact solving within the LNS framework to improve solution quality",
+        "Experimenting with and evaluating the matheuristic on real-world scheduling instances",
+      ],
+      achievements: [
+        "Developed a competitive matheuristic combining LNS and exact solving for educational timetabling",
+        "Applied advanced combinatorial optimization techniques to a real-world course scheduling problem",
+        "Gained deep expertise in metaheuristics, mathematical programming, and algorithm design",
+      ],
+    },
+  },
+  {
     id: 3,
     year: "2021 - 2022",
     title: "Software Developer",

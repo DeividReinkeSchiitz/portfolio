@@ -6,7 +6,7 @@ import { othersPageConfig, projectsData } from "./constants";
 import { Project, ProjectCategory } from "./types";
 import CategoryFilter from "./components/CategoryFilter";
 import ProjectsGrid from "./components/ProjectsGrid";
-import ProjectDetailModal from "./components/DetailModal";
+import ProjectDetailModal from "@/app/Others/components/DetailModal";
 
 export default function Others() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
