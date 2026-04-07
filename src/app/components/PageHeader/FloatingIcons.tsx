@@ -36,6 +36,7 @@ export default function FloatingIcons({ icons }: FloatingIconsProps) {
           }}
         >
           <motion.div
+            className="relative w-full h-full"
             animate={{
               y: [0, -6, 0],
               rotate: [0, index % 2 === 0 ? 3 : -3, 0],
@@ -50,10 +51,8 @@ export default function FloatingIcons({ icons }: FloatingIconsProps) {
             <Image
               src={icon.src}
               alt={icon.alt}
-              width={64}
-              height={64}
-              className="w-full h-auto"
-              style={{ height: "auto" }}
+              fill
+              className="object-contain"
             />
           </motion.div>
         </motion.div>
