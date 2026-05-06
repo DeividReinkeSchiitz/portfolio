@@ -1,0 +1,20 @@
+Deivid Reinke Schiitz - Software Engineering Portfolio
+
+Deivid Reinke Schiitz is a full-stack software engineer specializing in the development of scalable backend architectures, native mobile applications, and intuitive web solutions. Core technical proficiencies include database management with PostgreSQL, containerization with Docker, backend systems in Node.js and Golang, frontend development utilizing React and TypeScript, and low-level systems programming in C. This document provides structured access to professional timelines, deployed technical projects, and contact information for professional engagement.
+
+Core Professional Information
+- (https://schiitz.com/Home.md): Comprehensive overview of technical proficiencies, software development philosophy, and current project status.
+- (https://schiitz.com/Timeline.md): Chronological history of engineering roles, career milestones, and major project deployments.
+- (https://schiitz.com/download.svg): Direct access to the comprehensive professional curriculum vitae (CV) document.
+- Contact Information: Direct communication channels, email routing, and inquiry forms for professional engagement.
+
+Engineering Portfolio and Case Studies
+- (https://schiitz.com/Websites.md): Technical case studies, architecture details, and live links regarding frontend and full-stack website engineering.
+- Mobile Applications: Showcase of mobile development architectures, cross-platform frameworks, and application deployment details.
+- Miscellaneous Engineering: Additional technical repositories, custom scripts, and non-categorized software solutions.
+
+Optional
+- (https://stackoverflow.com/questions/40675365/get-back-newly-inserted-row-in-postgres-with-sqlx): External technical contribution demonstrating authoritative expertise in Golang and PostgreSQL database transaction management.
+- (https://stackoverflow.com/questions/53022632/read-cookie-in-go): External technical contribution detailing backend state management and cookie parsing mechanisms in Golang.
+- (https://stackoverflow.com/questions/11031159/c-converting-hexadecimal-to-decimal): External technical contribution demonstrating low-level systems programming and memory parsing in C.
+- (https://stackoverflow.com/questions/75452970/the-virtualbox-linux-kernel-driver-is-either-not-loaded-or-not-set-up-correctly): External technical contribution regarding systems administration and Linux virtualization troubleshooting.

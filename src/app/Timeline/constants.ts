@@ -116,7 +116,7 @@ export const timelineData: TimelineEvent[] = [
     location: "Campo Grande, Brazil",
     details: {
       fullDescription:
-        "Pursuing a Bachelor's degree in Computer Science at FACOM — UFMS, one of the leading public universities in Brazil. The program provided a rigorous foundation in theoretical and applied computer science, covering areas from algorithms and data structures to systems programming, networking, and software architecture.",
+        "Completed a Bachelor's degree in Computer Science at FACOM — UFMS, one of the leading public universities in Brazil. The program provided a rigorous foundation in theoretical and applied computer science, covering areas from algorithms and data structures to systems programming, networking, and software architecture.",
       responsibilities: [
         "Core coursework in algorithms, data structures, operating systems, and computer networks",
         "Software engineering projects applying design patterns and agile methodologies",
@@ -142,7 +142,7 @@ export const timelineData: TimelineEvent[] = [
   {
     id: 4,
     year: "2022 - 2025",
-    title: "Undergraduate Research — LEXA Lab",
+    title: "Graduate Research — LEXA Lab",
     company: "Federal University of Mato Grosso do Sul (UFMS)",
     description:
       "Implemented a Large Neighborhood Search matheuristic for the Course Discipline Allocation Problem, combining destroy-and-repair operators with exact solving for high-quality timetabling solutions.",
@@ -150,7 +150,7 @@ export const timelineData: TimelineEvent[] = [
     location: "Campo Grande, Brazil",
     details: {
       fullDescription:
-        "Conducted undergraduate research at LEXA Lab (UFMS) in combinatorial optimization applied to educational timetabling. Designed and implemented a Large Neighborhood Search (LNS) matheuristic to solve the Course Discipline Allocation Problem, integrating destroy-and-repair operators with exact solving techniques to produce high-quality timetabling solutions.",
+        "Conducted graduate research at LEXA Lab (UFMS) in combinatorial optimization applied to educational timetabling. Designed and implemented a Large Neighborhood Search (LNS) matheuristic to solve the Course Discipline Allocation Problem, integrating destroy-and-repair operators with exact solving techniques to produce high-quality timetabling solutions.",
       responsibilities: [
         "Designing and implementing a Large Neighborhood Search (LNS) matheuristic for timetabling optimization",
         "Developing destroy-and-repair operators tailored to the Course Discipline Allocation Problem",
